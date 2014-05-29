@@ -2,14 +2,14 @@ language: php
 php:
   - "5.2"
 
-branches:
-  only:
-    - devel
+
 
 script:
   - phpunit --configuration tests/phpunit.xml --coverage-text
 
 
-
+git:
+  submodules: false  
+  
 notifications:
   email: false
